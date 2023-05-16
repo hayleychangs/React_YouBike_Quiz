@@ -31,7 +31,7 @@ function StationInfo() {
                             return districtCheckStatus[item.sarea] === true;
                         })
                         .filter(item => {
-                            return item.sna.includes(stationSearchInput);
+                            return item.sarea.includes(stationSearchInput);
                         })
                         .sort((a, b) => {
                             if (sortKey) {

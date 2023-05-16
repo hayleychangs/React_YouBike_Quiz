@@ -105,6 +105,7 @@
     text-align: center;
     content: "";
     border-radius: 3px;
+    cursor: pointer;
 }
 .selectAllContainer input[type="checkbox"]:checked::after{
     content: "✓";
@@ -113,6 +114,7 @@
     font-weight: bold;
     border: 1px solid var(--lighter-green);
     background-color: var(--lighter-green);
+    cursor: pointer;
 }
 .selectAllContainer label{
     width: 16px;
@@ -155,6 +157,7 @@
     text-align: center;
     content: "";
     border-radius: 3px;
+    cursor: pointer;
 }
 .singleSelectContainer input[type="checkbox"]:checked::after{
     content: "✓";
@@ -163,6 +166,7 @@
     font-weight: bold;
     border: 1px solid var(--lighter-green);
     background-color: var(--lighter-green);
+    cursor: pointer;
 }
 .singleSelectContainer label{
     width: 16px;
