@@ -15,7 +15,7 @@
     * CSS Modules
     * Reset CSS
 * ##### **RWD**
-    <p>Create responsive layout using CSS FlexBox.</p>
+    <p>Create responsive layout using CSS Grid & FlexBox.</p>
 
 ## Backend Technique
 * **Firebase (version 9)**
