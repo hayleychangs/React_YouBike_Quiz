@@ -1,0 +1,225 @@
+.search{
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    max-height: 400px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cityMenu{
+    width: 100%;
+    position: relative;
+}
+.cityMenu input{
+    width: 175px;
+    height: 40px;
+    border-style: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-color: var(--F3);
+}
+.stationSearchInput{
+    margin-left: 10px;
+}
+.cityMenu input::placeholder{
+    font-weight: bold;
+    padding-left: 10px;
+    color: var(--lighter-grey);
+}
+.dropDownBtn{
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    border-radius: 3px;
+    position: absolute;
+    left: 149px;
+    top: 1.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBtn{
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    border-radius: 3px;
+    position: absolute;
+    left: 345px;
+    top: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cityList, .resultsItem{
+    width: 188px;
+    height: 232px;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    background-color: var(--F3);
+    z-index: 5;
+    border-radius:  10px;
+}
+.cityItems{
+    padding-left: 10px;
+}
+.checkBoxContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.selectAllContainer{
+    width: 100%;
+    height: 60px;
+    border-radius: 1px solid var(--lighter-grey);
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.selectAllContainer input{
+    visibility: hidden;
+}
+.selectAllContainer input[type="checkbox"]::after{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 20.5px;
+    left: 10px;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0px;
+    text-align: center;
+    content: "";
+    border-radius: 3px;
+}
+.selectAllContainer input[type="checkbox"]:checked::after{
+    content: "✓";
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid var(--lighter-green);
+    background-color: var(--lighter-green);
+}
+.selectAllContainer label{
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--lighter-grey);
+    border-radius: 3px;
+    background-color: var(--white);
+    position: absolute;
+    left: 10px;
+}
+.AllCheckText{
+    position: absolute;
+    left: 42px;
+}
+.districtSelectContainer{
+    height: 225px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.singleSelectContainer{
+    width: 130px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.singleSelectContainer input{
+    visibility: hidden;
+}
+.singleSelectContainer input[type="checkbox"]::after{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0px;
+    text-align: center;
+    content: "";
+    border-radius: 3px;
+}
+.singleSelectContainer input[type="checkbox"]:checked::after{
+    content: "✓";
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid var(--lighter-green);
+    background-color: var(--lighter-green);
+}
+.singleSelectContainer label{
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--lighter-grey);
+    border-radius: 3px;
+    background-color: var(--white);
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.SingleCheckText{
+    position: absolute;
+    left: 42px;
+}
+@media screen and (max-width:600px) and (min-width:360px){
+    .cityMenu{
+        width: 100%;
+        position: relative;
+        margin-top: 0px;
+    }
+    .cityMenu input{
+        width: 100%;
+        max-width: 300px;
+        padding: 0 0 0 11px;
+    }
+    .cityMenu input::placeholder{
+        padding: 0 0 0 0px;
+    }
+    .citySearchInput{
+        position: absolute;
+        top: 50px;
+    }
+    .stationSearchInput{
+        margin-left: 0px;
+        position: absolute;
+        top: 0px;
+    }
+    .dropDownBtn{
+        position: absolute;
+        left: 270px;
+        top: 50px;
+    }
+    .searchBtn{
+        left: 270px;
+    }
+    .cityList, .resultsItem{
+        width: 100%;
+        max-width: 311px;
+        top: 100px;  
+    }
+    .checkBoxContainer{
+        position: absolute;
+        top: 90px; 
+    }
+    .singleSelectContainer{
+        width: 100px;
+        margin: 5px 3px 0px 0px;
+    }
+}

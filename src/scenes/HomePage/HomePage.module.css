@@ -1,0 +1,21 @@
+.home{
+    width: 100%;
+    max-width: 1920px;
+    display: grid;
+    grid-template-rows: 95px minmax(auto, 1fr);
+}
+.header{
+    grid-row: 1/2;
+}
+.container{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 400px minmax(auto, 1fr);
+}
+.container .hero{
+    grid-row: 1 / 2;
+}
+.container .stationInfo{
+    grid-row: 2 / 3;
+    margin: auto auto 20px auto;
+}

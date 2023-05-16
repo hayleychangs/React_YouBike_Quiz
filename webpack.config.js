@@ -22,7 +22,24 @@ module.exports={
         rules:[
             {
                 test:/\.css$/i,
-                use:["style-loader", "css-loader"]
+                use:[
+                      "style-loader",
+                      {
+                          loader:"css-loader",
+                          options:{
+                              importLoaders: 1,
+                              modules: {
+                                  localIdentName: "[name]__[local]___[hash:base64:5]",
+                              }
+                          },
+                      },
+                    ],
+                    include: /\.module\.css$/,
+            },
+            {
+              test:/\.css$/i,
+              use:["style-loader", "css-loader"],
+              exclude: /\.module\.css$/,
             },
             {
                 test: /\.(png|jpg|gif)$/i,
