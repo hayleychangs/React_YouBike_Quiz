@@ -11,8 +11,9 @@
     * React Hook
         * `useState`, `useEffect`, `useRef`, `useContext`
    
-* **CSS Modules**
-    <p>Prevent the issue of styles interfering with each other.</p>
+* **CSS**
+    * CSS Modules
+    * Reset CSS
 * ##### **RWD**
     <p>Create responsive layout using CSS FlexBox.</p>
 
